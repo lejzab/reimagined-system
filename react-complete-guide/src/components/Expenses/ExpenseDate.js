@@ -1,6 +1,6 @@
 import './ExpenseDate.css'
 
-function ExpenseDate(props) {
+const ExpenseDate = (props) => {
     const locale = 'pl-PL'
     const month = props.date.toLocaleDateString(locale, {month: 'long'});
     const year = props.date.getFullYear();
